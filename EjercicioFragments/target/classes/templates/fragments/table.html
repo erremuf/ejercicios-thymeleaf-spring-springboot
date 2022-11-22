@@ -1,0 +1,18 @@
+<table th:fragment="tabla" class="table">
+  <thead>
+    <tr>
+      <th scope="col"># ID</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellido</th>
+      <th scope="col">DNI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr th:each="usuario : ${usuarios}" >
+      <th th:text="${usuario.id}"></th>
+      <td th:text="${usuario.nombre}"></td>
+      <td th:text="${usuario.apellido}"></td>
+      <td th:text="${usuario.dni}"></td>
+    </tr>
+  </tbody>
+</table>
